@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <h1>Form Example</h1>
+    <form action="./response.html" method="">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        DOB : <input type="date" id="dob" name="dob"><br><br>
+        Mobile No. : <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}"><br><br>
+        Attempt : <input type="number" id="attempt" name="attempt" min="1" max="3"><br><br>
+        Email : <input type="email" id="email" name="email" required><br><br>
+        Gender:
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female"> Female</label><br><br>
+        Vehicle:
+        <input type="checkbox" id="car" name="vehicle1" value="Car">
+        <label for="car"> Car</label>
+        <input type="checkbox" id="bike" name="vehicle2" value="Bike">
+        <label for="bike"> Bike</label><br><br>
+        Programming Language:
+        <select id="language" name="language">
+            <option value="Select your Language">Select your Language</option>
+            <option value="python">Python</option>
+            <option value="java">Java</option>
+            <option value="c++">C++</option>
+            <option value="javascript">JavaScript</option>
+        </select><br><br>
+        Password : <input type="password" id="password" name="password" required><br><br>
+        Appointment Time : <input type="time" id="appt" name="appt"><br><br>
+        File Upload : <input type="file" id="file" name="file"><br><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+
+</html>
